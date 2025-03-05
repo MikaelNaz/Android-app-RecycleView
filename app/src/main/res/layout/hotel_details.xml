@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Изображение отеля" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewDetailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Название отеля"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDetailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Адрес отеля"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:rating="4.5"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/textViewDetailPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12000 ₽/ночь"
+                android:textSize="18sp"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Описание"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Подробное описание отеля..."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Удобства"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/textViewWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wi-Fi: Есть"
+                    android:textSize="16sp"
+                    android:drawablePadding="8dp"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/textViewPool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Бассейн: Есть"
+                    android:textSize="16sp"
+                    android:drawablePadding="8dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonOpenMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Посмотреть на карте"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/buttonBookNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Забронировать"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#2196F3" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
