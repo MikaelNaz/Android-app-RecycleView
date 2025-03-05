@@ -9,4 +9,5 @@
 
 Детали отелей при бронировании
 
-![image](https://github.com/user-attachments/assets/5dab6219-8fdd-482e-85b8-353e4d9e8aab)
+![image](https://github.com/user-attachments/assets/860d69dd-f411-44e9-8ab3-ce52f8757822)
+
